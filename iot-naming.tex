@@ -1,0 +1,148 @@
+\documentclass[conference]{sig-alternate-10pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% figure-related settings
+\usepackage{graphicx}
+\graphicspath{{fig/}, {exp/}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.eps,.jpg}
+\usepackage[tight,footnotesize]{subfigure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% math-algorithm settings
+\usepackage{amsmath, amssymb, algorithmic}
+\usepackage[lined, boxed, comments numbered, ruled, linesnumbered]{algorithm2e}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% other settings
+\usepackage{multirow, longtable, url}
+\usepackage{footmisc} % define footref
+\usepackage[svgnames, table]{xcolor} % for color
+\usepackage{xifthen}% provides \isempty test
+\usepackage{setspace}
+\usepackage{authblk}% for multiple affiliations of one author 
+\usepackage{cite}
+\usepackage[font=scriptsize,margin=.5cm]{caption}
+\usepackage{color,soul}
+\usepackage{xspace}
+%\usepackage{calc}
+\newcommand{\TODO}[1]{\hl{\textbf{TODO:} #1}\xspace}
+\newcommand{\todo}[1]{\TODO{#1}}
+\newcommand{\paper}{report~}
+
+\newcommand{\NOTE}[1]{\textcolor{red}{\textbf{NOTE: #1}} \newline}
+\newcommand{\FIXME}[1]{\textcolor{red}{\textbf{{FIXME: #1}}} \newline}
+\newcommand{\fixme}[1]{\FIXME{#1}}
+
+\newfont{\nicettfont}{cmtt9}
+%\newcommand{\ndnName}[1]{``{\nicettfont #1}''}
+\newcommand{\schema}[1]{``{\nicettfont #1}''}
+
+\def\UrlBreaks{\do-}
+\def\cmd#1{\textit{#1}}
+\def\sample#1{\textit{#1}}
+
+%% \name command
+%% - allows break before /
+\usepackage{etoolbox}
+\usepackage{xstring}
+\DeclareListParser{\doslashlist}{/}
+\newcounter{ndnNameComponentCounter}%
+\newcommand{\ndnName}[1]{{%
+		\setcounter{ndnNameComponentCounter}{0}%
+		\renewcommand{\do}[1]{{%
+				\ifnumgreater{\value{ndnNameComponentCounter}}{0}{\allowbreak/}{}%
+				\ifnumodd{\value{ndnNameComponentCounter}}{}{}%
+				\detokenize{##1}}%
+			\stepcounter{ndnNameComponentCounter}}%
+		``{\fontfamily{cmtt}\small\selectfont\IfBeginWith{#1}{/}{/}{}\doslashlist{#1}}''%
+}}
+
+\def\name#1{\textbf{#1}}
+\newcommand{\method}[3][]{%
+{\small
+\setstretch{0.2}
+  \begin{flalign*}
+  \ifthenelse{\isempty{#1}}%
+    {}% if #1 is empty
+    {& \textcolor{DarkGreen}{\mathtt{#1}} &&\\}% if #1 is not empty
+     & \begin{aligned}
+       \textcolor{DarkBlue}{\fontfamily{pcr}\selectfont
+         \textbf{#2}}\textbf{(}#3\textbf{)}
+     \end{aligned}&&
+  \end{flalign*}
+}
+}
+\newcommand{\argu}[2]{%
+  &\textcolor{DarkGreen}{\mathtt{#1}}~#2
+}
+
+\newcommand{\nfdconf}[2]{%
+{\small
+\setstretch{0.2}
+  \begin{flalign*}
+    &\textcolor{DarkBlue}{\fontfamily{pcr}\selectfont \textbf{#1}}&&\\
+    &\begin{aligned} #2 \end{aligned}&&
+  \end{flalign*}
+}
+}
+
+\newcommand{\nfdbra}[2]{%
+   &\begin{aligned}
+   &\mathtt{#1}\\
+   &\{\\
+   &~~\begin{aligned}
+        #2
+      \end{aligned}\\
+   &\}
+   \end{aligned}\\
+}
+\newcommand{\nfdv}[2]{%
+  &\begin{aligned}
+  &\mathtt{#1}~\mathit{#2}\\
+  \end{aligned}\\
+}
+\newcommand{\nfdc}[1]{%
+{\small
+   $$\mathtt{#1}$$
+}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{authblk}
+
+\title{Understanding the Namespace of NDN-Lite}
+
+
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+
+
+\end{abstract}
+
+
+\input{introduction}
+
+\input{separation}
+
+\input{application-data-unit}
+
+\input{aggregation}
+
+\input{putting-together}
+
+\input{conclusion}
+
+
+\bibliographystyle{abbrv}
+\bibliography{reference}
+
+%\appendix
+%\input{function}
+%\input{instruction}
+
+\end{document}
