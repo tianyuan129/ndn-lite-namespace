@@ -1,3 +1,25 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{awsiot}
+{Amazon Inc}.
+\newblock Aws iot - connected home, 2020.
+
+\bibitem{homekit}
+{Apple Inc}.
+\newblock Homekit, 2020.
+
+\bibitem{googlenest}
+{Google Inc}.
+\newblock Google cloud iot, 2020.
+
+\bibitem{liang2018ndnizing}
+T.~Liang, J.~Pan, and B.~Zhang.
+\newblock Ndnizing existing applications: Research issues and experiences.
+\newblock In {\em Proceedings of the 5th ACM Conference on Information-Centric
+  Networking}, pages 172--183, 2018.
+
+\bibitem{smartthings}
+{SmartThings Inc}.
+\newblock Smartthings, 2020.
 
 \end{thebibliography}

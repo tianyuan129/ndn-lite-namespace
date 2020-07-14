@@ -1,21 +1,21 @@
 \section{Define Application Data Unit}
 \label{sec:application-data-unit}
-
-For NDN applications, it is important to give the definition of Application Data Unit (ADU).
+For NDN applications, it is important to give the definition of Application Data Unit (ADU) as the basic unit of data exchanges.
 A clear definition of ADU can help the data transfer be more efficient.
-As other work pointed out, ADU definition should consider \textbf{application semantics}, \textbf{data producers} and \textbf{data granularity}.
+ADU definition should consider \textbf{data producers}, \textbf{data granularity} and \textbf{application semantics}, .
 
-Unclear ADU definition where a single data unit contains more than one data producers should be avoided. 
-Previous work on namespace design (cite) has shown the how data ownership problem of IMAP data structure affect ADU definition in application translation.
+Firstly, for data producer aspect, unclear ADU definition where a single data unit having more than one potential data producers should be avoided. 
+Previous work on namespace design ~\cite{liang2018ndnizing} has shown the how data ownership problem of IMAP data structure affect ADU definition in application translation.
 However, as a NDN native application, NDN-Lite does not suffer from it and no special design is needed here.
-Data granularity relates to the granularity of data discovery and retransmission thus should be taken carefully to avoid inefficiency.
-In the smart home scenario, most data can be abstracted as events and usually not large. 
-Then decision of event-based granularity comes naturally.
+Secondly, data granularity relates to the granularity of data discovery and retransmission thus should be taken carefully to avoid inefficiency.
+In the smart home scenario, most data can be abstracted as events, then decision of event-based data granularity comes naturally.
+In this case, each ADU represents an event happened within the system, which consists of one or series of Data packets.
+Different events (e.g., \textit{turn the fan on} and \textit{close the door}) are categorized into different ADUs and accesssed from diffrent path through the name tree.
 
 Lastly we consider application semantics of ADU. 
 The name of ADU should be informational enough to express application semantic, and concise enough to only include application semantics.
 Descriptors (e.g., stale or fresh) within the application and not helpful to forwarding should not appear in the ADU's name.
-Based this principle, we surveyed mainstream smart home applications (cite) and found essential elements required for constructing a smart home namespace.
+Based this principle, we surveyed mainstream smart home applications ~\cite{smartthings, homekit, awsiot, googlenest} and found essential elements required for constructing a smart home namespace.
 \begin{itemize}
     \item \textbf{Capability}: Smart home data are often related with certain platform-level capabilities (e.g., vibration, water leakage detection, pushing SMS notifications).
           The assication should be reflected in names. This idea is aligned with the design decision in Section~\ref{sec:separation}.
@@ -26,7 +26,7 @@ Based this principle, we surveyed mainstream smart home applications (cite) and 
           For example, temperature sensed by different sensors in the same room probably vary. 
           Thus names of their produced data should tell the difference of their sensing scope.
     \item \textbf{Command identifier}: Commands can further be categorized based on their semantics, and identifiers are therefore needed.
-          Conceptually, commands for \textit{turning the fan off} and \textit{turning the fan on} should be named differently in the case only adult can issue the latter command.
+          Conceptually, commands for \textit{turn the fan off} and \textit{turn the fan on} should be named differently in the case only adult can issue the latter command.
           Such clearness can faciliate access control and trust policy management. 
 \end{itemize}
 All four elements above should be included into ADU's name, in order to be expressive enough for forwarding and applications performing trust policy examination.

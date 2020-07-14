@@ -1,14 +1,9 @@
 \section{Support Aggregation}
 \label{sec:data-aggregation}
+Namespace should also be designed to support content aggregation, so that applications, at API level, can subscribe to a specific prefix and expect all relevant data below it.
+Thus organization the hierarchal name is crucial, given the hierarchy design determines the pattern of aggregation.  
 
-Once defined what elements should be included in ADU's name, a pratical issue emerges: in what order they are placed in name?
-It is actually a highly applcation relevant question posed, given the way of ordering determines way of data aggregation happens.
-
-The corelations of the four elements mentioned also complicate the decision. 
-Notice that \textit{data type} can split \textit{capability} namespace into command and content, while \textit{capability} can also classify commands into different categorizes.
-Same problem also exist for \textit{effective scope} and \textit{command identifier}.
-
-We start order determining by making observation that in most cases \textit{effective scope} and \textit{command identifier} are finer granularity of \textit{data type} and \textit{capability}.
+We start determining the hierarchy by making observation that in most cases \textit{effective scope} and \textit{command identifier} are finer granularity of \textit{data type} and \textit{capability}.
 Hence the latter two should be at front of the former two.
 Then we consider aggregation apporach can benefit application most. 
 
@@ -28,6 +23,6 @@ In the first organization, received data of subscription on the first depth are 
 However, data are less guessable when the same subscription happens on the second organization since \textit{capability} has numerous types and more expressive.
 Same analysis applies on \textit{effective scope} and \textit{command identifier} situation, and \textit{effective scope} prevails in our application scenarios.
 
-Finally we get the total order benefits aggregation most: \textsl{/<home-prefix>/<capability>/<data-type>/<effective-scope>/<data-id>}.
+Finally we get the hierarchy which benefits content aggregation most: \textsl{/<home-prefix>/<capability>/<data-type>/<effective-scope>/<data-id>}.
 This order also better fit the functionality separation feature in Section~\ref{sec:separation}.
-We argue this order is the outcome of current NDN-Lite applcation needs of accessing namespace with maximized freedom, and this order may change if applcation needs shift in future.
+We argue this hierarchy is the outcome of current NDN-Lite applcation needs of accessing namespace with maximized freedom, and this hierarchy may change if applcation needs shift in future.

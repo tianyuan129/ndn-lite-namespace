@@ -1,7 +1,8 @@
 \section{Separate Functionalities}
 \label{sec:separation}
 
-We first consider what functionalities a NDN-based home IoT system should provide. 
+In order to build the best possible system, an NDN-based IoT system should consider both the basic NDN features and common application and device features.
+We first consider what functionalities such a home IoT system should provide. 
 
 To serve as a basic NDN entity, one should have four pieces: Name, Certificate, Trust Anchor, and Trust Schema.
 We claimed that since they're all first delivered or installed at entities' security bootstrapping time, these trust management should remain in the same sub-namespace.
@@ -9,7 +10,7 @@ Then service discovery and access control are needed for the system to faciliate
 Considering the independency of the above three functionalities, they should all be kept into non-overlapping subnamespace to avoid conflicts.
 
 Besides basic bricks for a NDN IoT system, common application or devices features should also be considered.
-In current smart home systems (cite) devices are often categorized into different capabilities. Applications are represented as consumers for this device provided capabilities.
+In current smart home systems devices are often categorized into different capabilities. Applications are represented as consumers for this device provided capabilities.
 This style of categorization benefit platform-level Pub/Sub much and become an emerging trend of current IoT systems.
 NDN-Lite also follows a similar approach to bring entity's capabilities directly under the root prefix (e.g., \textsl{/alice-home}) to better serve our Pub/Sub~\ref{sec:data-aggregation}.
 
@@ -20,6 +21,6 @@ Therefore, NDN-Lite separates overall namespace into following subnamespaces:
 \setlength{\itemsep}{0pt}
     \item \textsl{/<home-prefix>/cert}
     \item \textsl{/<home-prefix>/sd}
-    \item \textsl{/<home-prefix>/ac>}
+    \item \textsl{/<home-prefix>/ac}
     \item \textsl{/<home-prefix>/<capability>}
 \end{itemize}

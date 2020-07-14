@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  27 JUN 2020 00:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  13 JUL 2020 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/yu/Documents/NDN-Code/iot-naming/iot-naming.tex
-(/Users/yu/Documents/NDN-Code/iot-naming/iot-naming.tex
+**/Users/yu/Documents/NDN-Code/ndn-lite-namespace/iot-naming.tex
+(/Users/yu/Documents/NDN-Code/ndn-lite-namespace/iot-naming.tex
 LaTeX2e <2018-12-01>
-(/Users/yu/Documents/NDN-Code/iot-naming/sig-alternate-10pt.cls (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/epsfig.sty
+(/Users/yu/Documents/NDN-Code/ndn-lite-namespace/sig-alternate-10pt.cls (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -395,7 +395,7 @@ Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 LaTeX Warning: Unused global option(s):
     [conference].
 
-(/Users/yu/Documents/NDN-Code/iot-naming/iot-naming.aux)
+(/Users/yu/Documents/NDN-Code/ndn-lite-namespace/iot-naming.aux)
 \openout1 = `iot-naming.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
@@ -461,39 +461,44 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (/Users/yu/Documents/NDN-Code/iot-naming/introduction.tex) (/Users/yu/Documents/NDN-Code/iot-naming/separation.tex
-Overfull \hbox (7.4872pt too wide) in paragraph at lines 16--18
+ (/Users/yu/Documents/NDN-Code/ndn-lite-namespace/introduction.tex) (/Users/yu/Documents/NDN-Code/ndn-lite-namespace/separation.tex
+Overfull \hbox (7.4872pt too wide) in paragraph at lines 17--19
 \T1/aer/m/n/10 Lite sep-a-rates over-all names-pace into fol-low-ing sub-names-
  []
 
 
 Underfull \vbox (badness 1137) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 21.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 22.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)) (/Users/yu/Documents/NDN-Code/iot-naming/application-data-unit.tex [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+)) (/Users/yu/Documents/NDN-Code/ndn-lite-namespace/application-data-unit.tex
+Overfull \hbox (1.59895pt too wide) in paragraph at lines 7--14
+\T1/aer/m/n/10 def-i-ni-tion in ap-pli-ca-tion trans-la-tion. How-ever, as a NDN
+ []
+
+[1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 LaTeX Warning: No \author given.
 
 
 
-]) (/Users/yu/Documents/NDN-Code/iot-naming/aggregation.tex
-<fig/comparison.png, id=13, 1108.14pt x 553.06625pt>
+]) (/Users/yu/Documents/NDN-Code/ndn-lite-namespace/aggregation.tex
+<fig/comparison.png, id=14, 1108.14pt x 553.06625pt>
 File: fig/comparison.png Graphic file (type png)
 <use fig/comparison.png>
-Package pdftex.def Info: fig/comparison.png  used on input line 17.
+Package pdftex.def Info: fig/comparison.png  used on input line 12.
 (pdftex.def)             Requested size: 252.0pt x 125.76791pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 17--18
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12--13
  [][] 
  []
 
@@ -501,12 +506,12 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 17--18
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
-Overfull \hbox (36.76141pt too wide) in paragraph at lines 31--135
-\T1/aer/m/n/10 most: \T1/aer/m/sl/10 /<home-prefix>/<capability>/<data-type>/<effective-
+Overfull \hbox (11.28209pt too wide) in paragraph at lines 26--135
+\T1/aer/m/n/10 ag-gre-ga-tion most: \T1/aer/m/sl/10 /<home-prefix>/<capability>/<data-
  []
 
-(/Users/yu/Documents/NDN-Code/iot-naming/putting-together.tex
-<fig/overall-namespace.png, id=15, 1128.215pt x 534.99875pt>
+(/Users/yu/Documents/NDN-Code/ndn-lite-namespace/putting-together.tex
+<fig/overall-namespace.png, id=16, 1128.215pt x 534.99875pt>
 File: fig/overall-namespace.png Graphic file (type png)
 <use fig/overall-namespace.png>
 Package pdftex.def Info: fig/overall-namespace.png  used on input line 9.
@@ -516,7 +521,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 9--10
  [][] 
  []
 
-[2 </Users/yu/Documents/NDN-Code/iot-naming/fig/comparison.png> </Users/yu/Documents/NDN-Code/iot-naming/fig/overall-namespace.png>]
+[2 </Users/yu/Documents/NDN-Code/ndn-lite-namespace/fig/comparison.png> </Users/yu/Documents/NDN-Code/ndn-lite-namespace/fig/overall-namespace.png>]
 <fig/case-study.png, id=23, 1024.82875pt x 640.3925pt>
 File: fig/case-study.png Graphic file (type png)
 <use fig/case-study.png>
@@ -542,17 +547,17 @@ Overfull \hbox (14.37859pt too wide) in paragraph at lines 28--137
 \T1/aer/m/n/10 while, user's smart-phone which sub-scribes \T1/aer/m/sl/10 /alice-home/sms
  []
 
-(/Users/yu/Documents/NDN-Code/iot-naming/conclusion.tex) (/Users/yu/Documents/NDN-Code/iot-naming/iot-naming.bbl) [3 </Users/yu/Documents/NDN-Code/iot-naming/fig/case-study.png>] (/Users/yu/Documents/NDN-Code/iot-naming/iot-naming.aux) ) 
+(/Users/yu/Documents/NDN-Code/ndn-lite-namespace/conclusion.tex) (/Users/yu/Documents/NDN-Code/ndn-lite-namespace/iot-naming.bbl) [3 </Users/yu/Documents/NDN-Code/ndn-lite-namespace/fig/case-study.png>] (/Users/yu/Documents/NDN-Code/ndn-lite-namespace/iot-naming.aux) ) 
 Here is how much of TeX's memory you used:
- 7259 strings out of 492616
- 104147 string characters out of 6129482
- 204101 words of memory out of 5000000
- 10985 multiletter control sequences out of 15000+600000
+ 7264 strings out of 492616
+ 104408 string characters out of 6129482
+ 204116 words of memory out of 5000000
+ 10990 multiletter control sequences out of 15000+600000
  47126 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,39p,835b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,39p,843b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on /Users/yu/Documents/NDN-Code/iot-naming/iot-naming.pdf (3 pages, 311153 bytes).
+Output written on /Users/yu/Documents/NDN-Code/ndn-lite-namespace/iot-naming.pdf (3 pages, 315490 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
